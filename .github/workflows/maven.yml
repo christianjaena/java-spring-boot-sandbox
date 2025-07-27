@@ -14,6 +14,9 @@ on:
   pull_request:
     branches: [ "develop" ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
 
@@ -39,5 +42,4 @@ jobs:
         mvn versions:commit
         git add pom.xml
         git commit --allow-empty -m "ci: bum version [skip ci]"
-        git push origin develop
-    
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:develop
