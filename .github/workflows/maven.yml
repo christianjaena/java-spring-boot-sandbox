@@ -36,7 +36,7 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         # Bump patch version (customize as needed)
-        mvn build-helper:parse-version versions:set -DnewVersion=${parsedVersion.nextPatchVersion}
+        mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.nextPatchVersion}
         mvn versions:commit
         git add pom.xml
         git commit -m "ci: bum version [skip ci]"
