@@ -16,3 +16,4 @@ This Project includes:
 - [ ] AWS SNS/SQS
 - [ ] Kafka 
 - [ ] Service Processors
+- [ ] Spring Security
