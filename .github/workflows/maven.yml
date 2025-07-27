@@ -42,4 +42,5 @@ jobs:
         mvn versions:commit
         git add pom.xml
         git commit --allow-empty -m "ci: bum version [skip ci]"
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:develop
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        git push origin develop
