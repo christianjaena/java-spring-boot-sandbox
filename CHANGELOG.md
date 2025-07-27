@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Remove
 ### Fixed
 
+## [0.0.3] - 2025-07-27
+
+### Added
+- Dockerfile and docker-compose.yml for local development
+- Localstack, PostgreSQL, and Wiremock services in docker-compose
+- Edited maven.yml to bump Patch version when pushing to develop branch
+
 ---
 ## [0.0.2] - 2025-07-26
 

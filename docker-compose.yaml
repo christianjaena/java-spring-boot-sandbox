@@ -1,0 +1,56 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - localstack
+      - wiremock
+    networks:
+      - backend
+  db:
+    container_name: db
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - backend
+  localstack:
+      container_name: localstack
+      image: localstack/localstack:latest
+      ports:
+        - "4566:4566"
+      environment:
+        - SERVICES=sns,sqs,s3
+        - DATA_DIR=/tmp/localstack/data
+        - HOSTNAME_EXTERNAL=localstack
+      networks:
+        - backend
+  wiremock:
+      container_name: wiremock
+      image: wiremock/wiremock
+      ports:
+        - 7000:7000
+      command:
+        - --verbose
+        - 'true'
+        - --port
+        - '7000'
+        - --local-response-templating
+      networks:
+        - backend
+
+volumes:
+  db_data:
+
+networks:
+  backend:
