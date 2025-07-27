@@ -1,0 +1,7 @@
+aws:
+  sns:
+    region: us-east-1
+    endpoint: http://localhost:4566
+  sqs:
+    region: us-east-1
+    endpoint: http://localhost:4566
