@@ -5,6 +5,8 @@ Sandbox Project for Java and Spring Boot
 
 This Project includes:
 - [x] Java 21
+- [x] Docker Support
+- [x] Github Pipelines
 - [ ] Private Maven Repository
 - [ ] Domain Driven Design
 - [ ] Event Driven Architecture
@@ -13,5 +15,3 @@ This Project includes:
 - [ ] Liquibase
 - [ ] AWS SNS/SQS
 - [ ] Kafka 
-- [ ] Docker Support
-- [ ] Github Pipelines
