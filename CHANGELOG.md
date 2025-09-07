@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Remove
 ### Fixed
 
+## [0.0.4] - 2025-09-07
+
+### Added
+- Added Domain Driven Design
+
+---
+
 ## [0.0.3] - 2025-07-27
 
 ### Added

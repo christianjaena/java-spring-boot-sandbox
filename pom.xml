@@ -20,6 +20,7 @@
 
 	<modules>
 		<module>event-driven-architecture</module>
+		<module>domain-driven-design</module>
 	</modules>
 
 	<properties>

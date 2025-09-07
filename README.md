@@ -7,8 +7,8 @@ This Project includes:
 - [x] Java 21
 - [x] Docker Support
 - [x] Github Pipelines
+- [x] Domain Driven Design
 - [ ] Private Maven Repository
-- [ ] Domain Driven Design
 - [ ] Event Driven Architecture
 - [ ] PostgreSQL
 - [ ] Spring Data JPA
