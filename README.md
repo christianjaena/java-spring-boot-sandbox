@@ -17,3 +17,4 @@ This Project includes:
 - [ ] Kafka 
 - [ ] Service Processors
 - [ ] Spring Security
+- [ ] Conditional Beans

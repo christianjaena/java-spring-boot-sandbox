@@ -21,7 +21,8 @@
 	<modules>
 		<module>event-driven-architecture</module>
 		<module>domain-driven-design</module>
-	</modules>
+        <module>conditional-beans</module>
+    </modules>
 
 	<properties>
 		<java.version>21</java.version>
